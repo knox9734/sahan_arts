@@ -272,7 +272,7 @@ body, h1, h2, h3, p, ul, li {
 /* Basic styling */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(203, 136, 136, 0.2)), url('/dist/img/polygonal-abstract-red-dark-background-eo-1920x1080.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(203, 136, 136, 0.2)), url('img/polygonal-abstract-red-dark-background-eo-1920x1080.jpg');
   background-size: cover;
   
 }
