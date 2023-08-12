@@ -1,0 +1,504 @@
+/* Media queries for different screen sizes */
+/* Smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+
+  .company-name {
+    font-size: 16px;
+  }
+
+  nav {
+    margin-top: 15px;
+  }
+
+  nav li {
+    margin: 5px 0;
+  }
+  .card {
+    width: calc(50% - 20px); /* Adjust the width for smaller screens */
+  }
+}
+@media screen and (max-width: 768px) {
+  .card {
+    width: calc(50% - 20px); /* Adjust the width for smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 100%; /* Cards take up full width on smaller screens */
+  }
+}
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: rgb(1, 1, 1);
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+
+.black-bg {
+  background-color: black;
+}
+
+.red-bg {
+  background-color: red;
+}
+
+footer {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+}
+
+/* nav bar styles  */
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px; /* Adjust the width as needed */
+  margin-right: 10px;
+}
+
+.company-name {
+  color: white;
+  font-size: 18px; /* Adjust the font size as needed */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a:hover {
+  color: red;
+}
+
+/* carousel styles  */
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  animation-timing-function: ease; /* Use the ease timing function */
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.image-container {
+  position: relative;
+}
+
+/* ... Previous styles ... */
+
+.details {
+  position: absolute;
+  top: 0;
+  left: -100%; /* Initial position outside the viewport */
+  transition: left 0.3s ease-in-out; /* Add a smooth transition */
+  color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mySlides:hover .details {
+  left: 0; /* Slide in from the left on hover */
+}
+
+.details p {
+  margin: 0; /* Remove default margin for the paragraph */
+  font-size: 16px; /* Adjust the font size */
+  line-height: 1.4; /* Adjust the line height */
+}
+.details h2 {
+  color: blue;
+  margin: 0 0 10px; /* Margin below the heading */
+  font-size: 24px; /* Adjust the font size for the heading */
+}
+/* ... Rest of the styles ... */
+
+
+/* Services offer  */
+.services h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  width: calc(33.33% - 20px);
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.card-content {
+  padding: 20px;
+  background-color: #c70303;
+  border-radius: 0 0 8px 8px;
+}
+
+.card-content h2 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-content p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* About  */
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(203, 136, 136, 0.2)), url('/dist/img/polygonal-abstract-red-dark-background-eo-1920x1080.jpg');
+  background-size: cover;
+  
+}
+
+
+
+.glassy-container {
+  background: linear-gradient(to bottom, rgba(203, 136, 136, 0.5), rgba(203, 136, 136, 0.2));
+  backdrop-filter: blur(10px); /* Apply blur to the container */
+  overflow: hidden; /* Prevent the blurred content from overflowing */
+}
+
+.about-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for readability */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-section h3 {
+  font-size: 28px;
+  margin-top: 30px;
+  color: #555;
+}
+
+.about-section ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 20px;
+  color: #777;
+}
+
+.about-section ul li {
+  margin-bottom: 20px;
+  padding-left: 40px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.about-section ul li::before {
+  
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 0.5rem; /* Adjust vertical alignment */
+  color: #333;
+  font-size: 24px;
+}
+
+
+.about-section p {
+  margin-top: 20px;
+  line-height: 1.8;
+  color: #555;
+}
+
+.about-section p:last-child {
+  margin-bottom: 0;
+}
+
+/* Animations */
+.card {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: left;
+}
+
+ul li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  color: #555;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+ul li i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+  color: #555;
+}
+
+
+
+/* Additional animations can be added here */
+
+/* Contact us part  */
+.contact-section {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8); /* Adjust opacity for readability */
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-details {
+  width: 100%;
+  max-width: 600px; /* Increase the maximum width */
+  padding: 40px; /* Increase the padding */
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 20px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-details:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-details h2 {
+  font-size: 24px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin-bottom: 15px;
+  color: #777;
+}
+
+.contact-details ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: left; /* Align the contact items to the left */
+}
+
+.contact-details li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+.map {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+.map:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* Your existing styles */
+
+/* Floating button styles */
+.floating-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.floating-button:hover {
+  background-color: #fc0303;
+}
+
+/* Tooltip styles */
+/* Tooltip styles */
+.tooltip {
+  position: absolute;
+  bottom: 30px;
+  right: 75px; /* Adjust the position */
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1000;
+}
+
+.floating-button:hover + .tooltip {
+  display: block;
+}
+
+/* Rest of your styles */
+
